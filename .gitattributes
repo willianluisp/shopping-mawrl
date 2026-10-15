@@ -1,0 +1,9 @@
+# Normaliza texto entre Windows, Linux e macOS.
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.svg text eol=lf

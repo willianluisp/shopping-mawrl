@@ -1,0 +1,58 @@
+# Dependências e saídas de build
+node_modules/
+dist/
+build/
+coverage/
+.vite/
+*.tsbuildinfo
+
+# Logs e relatórios temporários
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Variáveis locais e credenciais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+**/secrets.h
+**/credentials.h
+**/wifi_config.h
+**/config.local.*
+!**/secrets.example.h
+!**/credentials.example.h
+!**/wifi_config.example.h
+
+# IDE e sistema operacional
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos temporários de editores
+*.swp
+*.swo
+*~
+.tmp/
+tmp/
+
+# Builds locais de Arduino/PlatformIO (preservar sketches e bibliotecas do projeto)
+.arduino/
+.pio/
+firmware_original/**/build/
+firmware_original/**/.vscode/
+
+# Referências brutas da maquete: manter localmente e publicar somente imagens selecionadas.
+referencias/

@@ -1,0 +1,37 @@
+/** Centimetres in the physical maquette. Unmeasured details are visual estimates. */
+export const model = {
+  base: { width: 40, depth: 38, thickness: 0.55 },
+  road: { depth: 13, sidewalk: 3, front: -18.2, rear: -6.2, surfaceY: 0.165, crosswalkX: -8.7 },
+  building: {
+    width: 26.5,
+    front: -6.9,
+    rear: 9.55,
+    groundHeight: 13.5,
+    upperHeight: 8,
+    roofY: 21.5,
+  },
+  parking: {
+    floorY: 13.5,
+    surfaceOffset: 0.08,
+    aisleFront: -5,
+    aisleRear: 3.6,
+    bayFront: 3.6,
+    bayRear: 9.1,
+    bayCenters: [9.15, 4.6, 0.05, -4.5, -9.35],
+    bayWidth: 4.35,
+    accessibleBayWidth: 4.9,
+  },
+  ramp: {
+    centerX: -16.4,
+    width: 7,
+    bottomZ: -14.35,
+    topZ: -1.95,
+    landingRear: 3.55,
+    landingWidth: 10.7,
+    landingShiftX: 1.85,
+    guardHeight: 1.1,
+  },
+  supports: { sideX: 12.5, frontZ: -2.3, rearZ: 8.85, roofFrontZ: -2.6 },
+  vehicle: { scale: 0.87, bodyWidth: 2.02, bodyLength: 3.9, turnRadius: 1.9, upperTurnStartZ: -0.25 },
+  gate: { x: -19.05, z: -15.15, arm: 6.1, pivotY: 2.15 },
+} as const
