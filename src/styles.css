@@ -35,3 +35,16 @@ footer { display:flex;justify-content:space-between;padding:22px 2px 0;color:#60
   .intro .lede { max-width:650px; margin-top:8px; font-size:11px; line-height:1.42; }
   .connection { margin-bottom:0; }
 }
+
+/* Integração com ESP32 — preserva o layout e a maquete 3D originais. */
+.mode-controls { display:flex; align-items:center; gap:5px; padding:4px; border:1px solid #54738d55; border-radius:10px; background:#0b1928; }
+.mode-controls button { border:0; border-radius:7px; padding:8px 11px; color:#95aec2; background:transparent; font-size:10px; }
+.mode-controls button.mode-selected { background:#18476c; color:#ecf6ff; }
+.online-dot { width:7px; height:7px; display:inline-block; flex-shrink:0; border-radius:50%; background:#35de98; box-shadow:0 0 10px #35de98; margin-right:7px; align-self:flex-start; margin-top:6px; }
+.spot.unavailable { opacity:.65; border-color:#6780984d; }
+.spot.unavailable .status-dot { background:#7891a4; box-shadow:none; }
+.spot.unavailable b { color:#a6b8c8; }
+.spot:disabled { cursor:default; }
+.spot:disabled:hover { transform:none; border-color:#52718a33; }
+.hardware-notice { color:#ffc77c; font-size:10px; line-height:1.4; margin:10px 0 0; }
+@media(max-width:480px) { .mode-controls button { font-size:9px; padding:7px 8px; } }

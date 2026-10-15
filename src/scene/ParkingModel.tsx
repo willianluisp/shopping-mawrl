@@ -127,7 +127,7 @@ function ParkingDeck({ spots }: { spots: Spot[] }) {
         <Solid args={[.12, .035, bayDepth - .28]} position={[x - p.bayWidth / 2, y + .11, bayMiddle]} color={C.yellow} surface="marking"/>
         <Solid args={[.12, .035, bayDepth - .28]} position={[x + p.bayWidth / 2, y + .11, bayMiddle]} color={C.yellow} surface="marking"/>
         <Text position={[x, y + .13, p.bayFront + .53]} rotation={[-Math.PI / 2, 0, Math.PI]} fontSize={.62} color={C.white} anchorX="center">{`0${spot.id}`}</Text>
-        <Led x={x} occupied={Boolean(spot.occupied)}/>
+        {typeof spot.occupied === 'boolean' && <Led x={x} occupied={spot.occupied}/>}
         {spot.occupied && <Car x={x} z={bayMiddle + .15} color={['#7c2629', '#af3031', '#5a646b', '#234d78'][i]}/>}
       </group>
     })}
